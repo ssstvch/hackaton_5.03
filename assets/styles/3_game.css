@@ -1,0 +1,98 @@
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game__heading {
+  text-align: center;
+  margin: 2vw 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+}
+
+.game .game-wrapper {
+  margin-top: 35vw;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 2vw;
+}
+
+.game .game-wrapper .memory-card {
+  margin: 0 auto;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
+  width: 7vw;
+  height: 9vw;
+}
+
+.game .game-wrapper .memory-card:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.game .game-wrapper .front-face,
+.game .game-wrapper .back-face {
+  width: 100%;
+  height: 100%;
+  padding: 1.5vw;
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgba(24, 93, 3, 0.192);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.game .game-wrapper .front-face {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.game-modal {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10vw;
+}
+
+.game-modal .game-btn {
+  text-decoration: none;
+  color: black;
+  padding: 0.7vw 2vw;
+  border-radius: 4px;
+  border: 1px solid rgba(128, 128, 128, 0.192);
+}
+
+.game-modal .game-btn:hover {
+  background-color: rgba(24, 93, 3, 0.192);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=3_game.css.map */
