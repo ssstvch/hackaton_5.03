@@ -1,0 +1,46 @@
+.snake {
+  margin: 2vw 2vw 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__heading {
+    text-align: center;
+    margin: 2vw 0;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+  }
+  &__count {
+    text-align: center;
+    font-size: 1vw;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 10vw;
+    margin: 0 auto;
+    &_num {
+      margin-left: 1vw;
+    }
+  }
+  &__game {
+    background-color: black;
+
+    border: 1px solid white;
+  }
+  &__modal {
+    display: none;
+    margin: 0 auto;
+    margin-top: 10vw;
+    text-align: center;
+    .game-btn {
+      text-decoration: none;
+      color: black;
+      padding: 0.7vw 2vw;
+      border-radius: 4px;
+      border: 1px solid rgba(128, 128, 128, 0.192);
+      &:hover {
+        background-color: rgba(24, 93, 3, 0.192);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

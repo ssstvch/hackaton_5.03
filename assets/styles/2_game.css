@@ -1,0 +1,62 @@
+.snake {
+  margin: 2vw 2vw 0 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.snake__heading {
+  text-align: center;
+  margin: 2vw 0;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+}
+
+.snake__count {
+  text-align: center;
+  font-size: 1vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10vw;
+  margin: 0 auto;
+}
+
+.snake__count_num {
+  margin-left: 1vw;
+}
+
+.snake__game {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.snake__modal {
+  display: none;
+  margin: 0 auto;
+  margin-top: 10vw;
+  text-align: center;
+}
+
+.snake__modal .game-btn {
+  text-decoration: none;
+  color: black;
+  padding: 0.7vw 2vw;
+  border-radius: 4px;
+  border: 1px solid rgba(128, 128, 128, 0.192);
+}
+
+.snake__modal .game-btn:hover {
+  background-color: rgba(24, 93, 3, 0.192);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=2_game.css.map */
