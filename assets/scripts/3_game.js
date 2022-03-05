@@ -98,11 +98,9 @@ const checkForMatch = () => {
       }, 2000);
       setTimeout(() => {
         document.querySelector(".game-modal").style.display = "block";
-        document
-          .querySelector(".btn-start-again")
-          .addEventListener("click", () => {
-            console.log("Игра закончена!");
-          });
+        document.querySelector(".game-btn").addEventListener("click", () => {
+          document.location = "menu.html";
+        });
       }, 2500);
     } else {
       disableCards();

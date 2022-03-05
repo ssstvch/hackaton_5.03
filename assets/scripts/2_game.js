@@ -77,6 +77,9 @@ const checkGameCount = () => {
     document.querySelector(".snake__count").style.display = "none";
     document.querySelector(".snake").style.display = "none";
     document.querySelector(".snake__modal").style.display = "block";
+    document.querySelector(".game-btn").addEventListener("click", () => {
+      document.location = "menu.html";
+    });
   }
 };
 
