@@ -92,7 +92,7 @@ body::after {
 head::before {
     background-image: url(/assets/images/prince1.png);
     top: 30vmin;
-    left: 40vmin;
+    left: 70vmin;
     -webkit-animation: fly1 3s infinite;
     animation: fly1 3s infinite;
 }
