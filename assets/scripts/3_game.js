@@ -99,7 +99,7 @@ const checkForMatch = () => {
       setTimeout(() => {
         document.querySelector(".game-modal").style.display = "block";
         document.querySelector(".game-btn").addEventListener("click", () => {
-          document.location = "menu.html";
+          document.querySelector(".gobelen").style.display = "block";
         });
       }, 2500);
     } else {

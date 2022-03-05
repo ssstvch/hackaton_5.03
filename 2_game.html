@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/styles/index.css" />
 
     <link rel="stylesheet" href="./assets/styles/2_game.css" />
+    <link rel="stylesheet" href="./assets/styles/gobelen.css" />
     <script src="./assets/scripts/2_game.js" defer></script>
     <title>Игра №2</title>
   </head>
@@ -27,11 +28,20 @@
     <article class="snake">
       <canvas class="snake__game" width="600" height="600"></canvas>
     </article>
+
     <article class="snake__modal">
       <section>
         <h5 class="card-title mb-3">Поздравляю! Вы прошли игру!</h5>
-        <button class="game-btn">Вернуться на карту</button>
+        <button class="game-btn">Посмотреть гобелен</button>
       </section>
+    </article>
+
+    <article class="gobelen">
+      <img src="./assets/images/2_gobelen-min.png" alt="1_gobelen" />
+      <div>Прогресс! Пойдем дальше!</div>
+      <button class="btn btn-light" onclick="document.location='menu.html'">
+        На главное меню
+      </button>
     </article>
   </body>
 </html>
